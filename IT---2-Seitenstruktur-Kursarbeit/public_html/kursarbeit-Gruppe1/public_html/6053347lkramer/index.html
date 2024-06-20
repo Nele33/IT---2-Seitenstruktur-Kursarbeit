@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>Lernwecker</title>
+    <link rel="stylesheet" href="6053347lkramer.css" type="text/css">
+  
+</head>
+<body>
+	
+	<h1>Lernwecker</h1>
+	<p>Stelle dir mit diesem Tool deinen individuellen Lernwecker. Tippe einfach einen Namen ein (z.B. IT 2), suche dir eine passende Farbe für deinen Wecker aus und gib eine Minutenanzahl oder Uhrzeit an. Starte nun deinen Timer oder Wecker!</p><p>Viel Erfolg beim Lernen!</p>
+	
+	
+	<!--Quellen: https://www.youtube.com/watch?v=XWdH4XwrKrM und https://stackoverflow.com/questions/64615939/javascript-timer-with-clock-graphic und https://codepen.io/onge/pen/JoYEZo-->
+    <div class="timer-container">
+		
+		<!--Timer 1-->
+        <div class="timer" id="timer1">
+            <input type="text" placeholder="Name eingeben" class="timer-name" id="name1">
+            <input type="color" class="color-picker" id="color1">
+            <div>
+                <input type="radio" name="time-option1" value="minutes" checked> Minuten
+                <input type="radio" name="time-option1" value="time"> Uhrzeit
+            </div>
+            <input type="number" placeholder="Minuten eingeben" class="time-input" id="minutes1">
+            <input type="time" class="time-input" id="time1">
+            <button class="start-btn" onclick="startTimer(1)">Start</button>
+            <button class="pause-btn" onclick="pauseTimer(1)">Pause</button>
+            <button class="stop-btn" onclick="stopTimer(1)">Stopp</button>
+            <div class="digital-clock" id="clock1">00:00</div>
+            <canvas id="canvas1" width="200" height="200"></canvas>
+            <div class="notification" id="notification1"></div>
+        </div>
+		
+		<!--Timer 2 -->
+		 <div class="timer" id="timer2">
+            <input type="text" placeholder="Name eingeben" class="timer-name" id="name2">
+            <input type="color" class="color-picker" id="color2">
+            <div>
+                <input type="radio" name="time-option2" value="minutes" checked> Minuten
+                <input type="radio" name="time-option2" value="time"> Uhrzeit
+            </div>
+            <input type="number" placeholder="Minuten eingeben" class="time-input" id="minutes2">
+            <input type="time" class="time-input" id="time2">
+            <button class="start-btn" onclick="startTimer(2)">Start</button>
+            <button class="pause-btn" onclick="pauseTimer(2)">Pause</button>
+            <button class="stop-btn" onclick="stopTimer(2)">Stopp</button>
+            <div class="digital-clock" id="clock2">00:00</div>
+            <canvas id="canvas2" width="200" height="200"></canvas>
+            <div class="notification" id="notification2"></div>
+        </div>
+		
+		<!--Timer 3-->
+        <div class="timer" id="timer3">
+            <input type="text" placeholder="Name eingeben" class="timer-name" id="name3">
+		
+            <input type="color" class="color-picker" id="color3">
+            <div>
+                <input type="radio" name="time-option3" value="minutes" checked> Minuten
+                <input type="radio" name="time-option3" value="time"> Uhrzeit
+            </div>
+            <input type="number" placeholder="Minuten eingeben" class="time-input" id="minutes3">
+            <input type="time" class="time-input" id="time3">
+            <button class="start-btn" onclick="startTimer(3)">Start</button>
+            <button class="pause-btn" onclick="pauseTimer(3)">Pause</button>
+            <button class="stop-btn" onclick="stopTimer(3)">Stopp</button>
+            <div class="digital-clock" id="clock3">00:00</div>
+            <canvas id="canvas3" width="200" height="200"></canvas>
+            <div class="notification" id="notification3"></div>
+        </div>
+    </div>
+    <script src="6053347lkramer.js"></script>
+	<script src="daten6053347lkramer.js"></script>
+</body>
+</html>
