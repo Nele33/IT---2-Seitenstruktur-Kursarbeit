@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Modulplaner</title>
+	
+	<link rel="stylesheet" type="text/css" href="6053997nbusch.css"/>
+	
+</head>
+
+<body>
+
+    <div>
+        <h1>Modulplaner</h1>
+    </div>
+
+    <div class="form-container">
+        <div class="form-group">
+            <label for="modulName">Modulname:</label>
+            <input type="text" id="modulName">
+        </div>
+		
+		<!--Gefunden unter: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/color-->
+        <div class="form-group">
+            <label for="modulColor">Farbe:</label>
+            <input type="color" id="modulColor">
+        </div>
+		
+        <div class="form-group">
+            <label for="modulDescription">Beschreibung:</label>
+            <input type="text" id="modulDescription">
+        </div>
+		
+        <div class="form-group">
+            <label for="modulTasks">Aufgaben:</label>
+            <input type="text" id="modulTasks">
+        </div>
+		
+		<!--Gefunden unter: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time-->
+        <div class="form-group">
+            <label for="appt">Geschätzter Zeitaufwand:</label>
+            <input type="time" id="appt" name="appt" min="01:00" max="18:00" required />
+        </div>
+		
+        <div class="form-group">
+            <button type="button" onclick="newModule()">Modul hinzufügen</button>
+        </div>
+    </div>
+
+    <h2>Lernfortschritt</h2>
+    <div id="modulList"></div>
+
+    <div id="chart_div"></div>
+	
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script src="6053997nbusch.js"></script>
+<script src="daten6053997nbusch.js"></script>
+
+</body>
+</html>
+
+

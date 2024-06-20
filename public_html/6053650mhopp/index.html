@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lernkalender</title>
+    <link rel="stylesheet" href="6053650mhopp.css">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+    <h1>Lernkalender</h1>
+
+    <form id="eventForm"> <!-- Formularfelder für die Eingabe!--> 
+        <label for="title">Titel:</label>
+        <input type="text" id="title" required><br>
+
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date!--> 
+        <label for="date">Datum:</label>
+        <input type="date" id="date" required><br>
+
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time!-->
+        <label for="time">Uhrzeit:</label>
+        <input type="time" id="time" required><br>
+
+        <label for="color">Farbe:</label>
+        <input type="color" id="color" value="#ff0000"><br>
+        
+        <label for="description">Details:</label>
+        <input type="text" id="description" required><br>
+
+        <button type="submit">Termin hinzufügen</button>
+    </form>
+
+    <h2>Termine</h2>
+    <table id="eventTable"> <!-- Tabelle mit Terminen !--> 
+        <thead>
+            <tr>
+                <th>Titel</th>
+                <th>Datum</th>
+                <th>Uhrzeit</th>
+                <th>Farbe</th>
+                <th>Details</th>
+                <th>Erledigt</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <h2>Das hast du schon geschafft...</h2>
+    <div id="chart_div" style="width: 900px; height: 500px";></div> <!-- Google Charts Diagramm!-->
+
+    <script src="6053650mhopp.js"></script> <!-- Verknüpfung zu den JavaScript-Dateien!--> 
+    <script src="daten6053605mhopp.js"></script>
+</body>
+</html>
+
