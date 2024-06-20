@@ -76,10 +76,15 @@
         background-color: #FDBDBE;
         color: #333;
     }
-    tr:nth-child(odd) {
+    tr {
         background-color: #f9f9f9;
     }
     tr:hover {
         background-color: #F7D0F3;
     }
+	
+body {
+    font-family: Arial, "serif";
+    margin: 50px;
+    background: #e9ddc3
 

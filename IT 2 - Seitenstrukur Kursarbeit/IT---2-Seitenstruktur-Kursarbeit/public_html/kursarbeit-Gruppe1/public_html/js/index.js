@@ -5,9 +5,9 @@
 const menueStrukturIndex = [
     new MenuPunkt('Startseite', 'index.html'),
     new MenuPunkt('unsere Anwendungen', '', [
-        new MenuPunkt('6053347lkramer', '6053347lkramer/index.html'),
-        new MenuPunkt('6053650mhopp', '6053650mhopp/index.html'),
-		new MenuPunkt('6053997nbusch', '6053997nbusch/index.html')
+        new MenuPunkt('6053347lkramer', 'public_html/6053347lkramer/index.html'),
+        new MenuPunkt('6053650mhopp', 'public_html/6053650mhopp/index.html'),
+		new MenuPunkt('6053997nbusch', 'public_html/6053997nbusch/index.html')
     ]),
     new MenuPunkt('Aufgabenbeschreibung', 'aufgabenbeschreibung.html'),
 
@@ -46,3 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
     generateTableContent(daten6053650mhopp, 'tbody6053650mhopp');
     generateTableContent(daten6053997nbusch, 'tbody6053997nbusch');
 });
+
+
+hfonl,n ,nbjv 
