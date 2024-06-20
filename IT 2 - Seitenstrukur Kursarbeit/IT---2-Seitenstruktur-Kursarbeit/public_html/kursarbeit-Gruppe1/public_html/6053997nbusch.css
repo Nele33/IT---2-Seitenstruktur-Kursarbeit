@@ -1,0 +1,13 @@
+/* CSS Document */
+
+.form-container {
+            display: grid;
+            grid-template-columns: auto;
+            gap: 10px;
+        }
+
+body {
+	font-family: Arial, "serif";
+	margin: 50px;
+	background: #e9ddc3
+}
